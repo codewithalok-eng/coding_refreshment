@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: float, b: float, c: float) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    if b * b == a * c:
+        return True
+    return False
 
 def main():
-    a = float(input("a: "))\n    b = float(input("b: "))\n    c = float(input("c: "))\n    print(f"Geometric progression: {solve(a, b, c)}")
+    a = float(input("a: "))
+    b = float(input("b: "))
+    c = float(input("c: "))
+    print(f"Geometric progression: {solve(a, b, c)}")
 
 if __name__ == "__main__":
     main()

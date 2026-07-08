@@ -9,10 +9,18 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    if not (1 <= num <= 9999):
+        raise ValueError("Input must be an integer between 1 and 9999.")
+    digits = [int(d) for d in str(num)]
+    digit_sum = sum(digits)
+    digit_product = 1
+    for d in digits:
+        digit_product *= d
+    return digit_sum > digit_product
 
 def main():
-    num = int(input("Enter an integer (1-9999): "))\n    print(f"Sum > Product: {solve(num)}")
+    num = int(input("Enter an integer (1-9999): "))
+    print(f"Sum > Product: {solve(num)}")
 
 if __name__ == "__main__":
     main()

@@ -9,10 +9,17 @@ Mentor Tips (Python 3.14+):
 
 def solve(hours: int, minutes: int) -> float:
     # TODO: Implement this method to solve the question
-    0.0
+    if not (0 <= hours <= 23) or not (0 <= minutes <= 59):
+        raise ValueError("Hours must be in the range 0-23 and minutes in the range 0-59.")
+    hour_angle = (hours % 12) * 30 + minutes * 0.5
+    minute_angle = minutes * 6
+    diff = abs(hour_angle - minute_angle)
+    return min(diff, 360 - diff)
 
 def main():
-    h = int(input("Hours (1-12 or 0-23): "))\n    m = int(input("Minutes (0-59): "))\n    print(f"Smaller angle: {solve(h, m)}")
+    h = int(input("Hours (1-12 or 0-23): "))
+    m = int(input("Minutes (0-59): "))
+    print(f"Smaller angle: {solve(h, m)}")
 
 if __name__ == "__main__":
     main()

@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
 
-def main():
-    num = int(input("Enter a 3-digit number: "))\n    print(f"Condition met: {solve(num)}")
+    d1 = num // 100
+    d2 = (num // 10) % 10
+    d3 = num % 10
+    return d1 + d3 == d2
+
+def main(): 
+    num = int(input("Enter a 3-digit number: "))
+    print(f"Condition met: {solve(num)}")
 
 if __name__ == "__main__":
     main()

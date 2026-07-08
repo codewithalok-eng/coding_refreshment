@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: float, b: float, c: float) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    if a**2 + b**2 == c**2 or a**2 + c**2 == b**2 or b**2 + c**2 == a**2:
+        return True
+    return False
 
 def main():
-    a = float(input("a: "))\n    b = float(input("b: "))\n    c = float(input("c: "))\n    print(f"Pythagorean triplet: {solve(a, b, c)}")
+    a = float(input("a: "))
+    b = float(input("b: "))
+    c = float(input("c: "))
+    print(f"Pythagorean triplet: {solve(a, b, c)}")
 
 if __name__ == "__main__":
     main()
