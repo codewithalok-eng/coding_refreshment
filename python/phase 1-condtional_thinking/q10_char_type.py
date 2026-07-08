@@ -9,10 +9,19 @@ Mentor Tips (Python 3.14+):
 
 def solve(char: str) -> str:
     # TODO: Implement this method to solve the question
-    return "uppercase" # or "lowercase" or "digit" or "special"
+    if char.isupper():
+        return "uppercase"
+    elif char.islower():
+        return "lowercase"
+    elif char.isdigit():
+        return "digit"
+    else:
+        return "special"
 
 def main():
-    char = input("Enter a single character: ")\n    result = solve(char)\n    print(f"Result: {result}")
+    char = input("Enter a single character: ")
+    result = solve(char)
+    print(f"Result: {result}")
 
 if __name__ == "__main__":
     main()

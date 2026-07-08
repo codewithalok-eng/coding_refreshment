@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(char: str) -> str:
     # TODO: Implement this method to solve the question
-    return "vowel" # or "consonant"
+    if char.lower() in ['a', 'e', 'i', 'o', 'u']:
+        return "vowel"
+    else:  
+        return "consonant"
 
 def main():
-    char = input("Enter a single letter: ")\n    result = solve(char)\n    print(f"Result: {result}")
+    char = input("Enter a single letter: ")
+    result = solve(char)
+    print(f"Result: {result}")
 
 if __name__ == "__main__":
     main()
