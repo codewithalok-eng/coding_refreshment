@@ -9,10 +9,21 @@ Mentor Tips (Python 3.14+):
 
 def solve(x: float, y: float) -> str:
     # TODO: Implement this method to solve the question
-    return "origin" # or "Q1", "Q2", "Q3", "Q4" or "axis"
+    if x > 0 and y > 0:
+        return "Q1"
+    elif x < 0 and y > 0:
+        return "Q2"
+    elif x < 0 and y < 0:
+        return "Q3"
+    elif x > 0 and y < 0:
+        return "Q4"
+    else:
+        return "origin" # or "Q1", "Q2", "Q3", "Q4" or "axis"
 
 def main():
-    x = float(input("x: "))\n    y = float(input("y: "))\n    print(f"Quadrant: {solve(x, y)}")
+    x = float(input("x: "))
+    y = float(input("y: "))
+    print(f"Quadrant: {solve(x, y)}")
 
 if __name__ == "__main__":
     main()

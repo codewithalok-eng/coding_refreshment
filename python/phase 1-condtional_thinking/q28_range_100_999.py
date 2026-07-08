@@ -9,10 +9,11 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    return 100 <= num <= 999
 
 def main():
-    num = int(input("Number: "))\n    print(f"Within range [100, 999]: {solve(num)}")
+    num = int(input("Number: "))
+    print(f"Within range [100, 999]: {solve(num)}")
 
 if __name__ == "__main__":
     main()

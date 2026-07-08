@@ -9,10 +9,13 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: float, b: float, c: float) -> float:
     # TODO: Implement this method to solve the question
-    0.0
-
+    return a + b + c - max(a, b, c) - min(a, b, c)
+    
 def main():
-    a = float(input("a: "))\n    b = float(input("b: "))\n    c = float(input("c: "))\n    print(f"Median: {solve(a, b, c)}")
+    a = float(input("a: "))
+    b = float(input("b: "))
+    c = float(input("c: "))
+    print(f"Median: {solve(a, b, c)}")
 
 if __name__ == "__main__":
     main()

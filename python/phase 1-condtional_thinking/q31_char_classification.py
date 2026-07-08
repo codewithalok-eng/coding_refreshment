@@ -9,10 +9,16 @@ Mentor Tips (Python 3.14+):
 
 def solve(char: str) -> str:
     # TODO: Implement this method to solve the question
-    return "neither" # or "letter" or "digit"
+    if char.isalpha():
+        return "letter"
+    elif char.isdigit():
+        return "digit"
+    else:
+        return "neither"
 
 def main():
-    char = input("Char: ")\n    print(f"Classification: {solve(char)}")
+    char = input("Char: ")
+    print(f"Classification: {solve(char)}")
 
 if __name__ == "__main__":
     main()

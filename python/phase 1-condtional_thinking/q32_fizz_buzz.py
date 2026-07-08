@@ -9,10 +9,17 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> str:
     # TODO: Implement this method to solve the question
+    if num % 15 == 0:
+        return "FizzBuzz"
+    elif num % 3 == 0:
+        return "Fizz"
+    elif num % 5 == 0:
+        return "Buzz"               
     return str(num) # default
 
 def main():
-    num = int(input("Number: "))\n    print(f"Result: {solve(num)}")
+    num = int(input("Number: "))
+    print(f"Result: {solve(num)}")
 
 if __name__ == "__main__":
     main()

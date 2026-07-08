@@ -9,10 +9,11 @@ Mentor Tips (Python 3.14+):
 
 def solve(amount: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    return amount % 100 == 0
 
 def main():
-    amount = int(input("Amount: "))\n    print(f"Evenly divisible: {solve(amount)}")
+    amount = int(input("Amount: "))
+    print(f"Evenly divisible: {solve(amount)}")
 
 if __name__ == "__main__":
     main()

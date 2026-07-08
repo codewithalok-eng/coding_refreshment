@@ -9,10 +9,16 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    if num < 0:
+        return False
+    for i in range(num // 2 + 1):
+        if i * i == num:
+            return True
+    return False
 
 def main():
-    num = int(input("Number: "))\n    print(f"Perfect square: {solve(num)}")
+    num = int(input("Number: "))
+    print(f"Perfect square: {solve(num)}")
 
 if __name__ == "__main__":
     main()
