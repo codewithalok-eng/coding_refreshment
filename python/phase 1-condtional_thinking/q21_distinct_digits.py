@@ -9,10 +9,14 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    d1 = num // 100
+    d2 = (num // 10) % 10
+    d3 = num % 10
+    return d1 != d2 and d2 != d3 and d1 != d3
 
 def main():
-    num = int(input("Enter a 3-digit number: "))\n    print(f"Distinct: {solve(num)}")
+    num = int(input("Enter a 3-digit number: "))
+    print(f"Distinct: {solve(num)}")
 
 if __name__ == "__main__":
     main()

@@ -9,10 +9,14 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
+
+    if num % 7 == 0 or num % 10 == 7 or num % 10 == -7:
+        return True             
+    return False
 
 def main():
-    num = int(input("Enter a number: "))\n    print(f"Multiple of 7 or ends with 7: {solve(num)}")
+    num = int(input("Enter a number: "))
+    print(f"Multiple of 7 or ends with 7: {solve(num)}")
 
 if __name__ == "__main__":
     main()

@@ -9,10 +9,20 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> str:
     # TODO: Implement this method to solve the question
-    return "neither"
+    d1 = num // 100
+    d2 = (num // 10) % 10
+    d3 = num % 10
+
+    if d2 == max(d1, d2, d3):
+        return "largest"
+    elif d2 == min(d1, d2, d3):
+        return "smallest"
+    else:
+        return "neither"
 
 def main():
-    num = int(input("Enter a 3-digit number: "))\n    print(f"Middle relation: {solve(num)}")
+    num = int(input("Enter a 3-digit number: "))
+    print(f"Middle relation: {solve(num)}")
 
 if __name__ == "__main__":
     main()

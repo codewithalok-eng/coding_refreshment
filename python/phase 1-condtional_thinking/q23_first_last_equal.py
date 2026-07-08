@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(num: int) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    first_digit = num // 1000 #trims decimal, returns integer
+    last_digit = num % 10
+    if first_digit == last_digit:
+        return True
+    return False
 
 def main():
-    num = int(input("Enter a 4-digit number: "))\n    print(f"First and last equal: {solve(num)}")
+    num = int(input("Enter a 4-digit number: "))
+    print(f"First and last equal: {solve(num)}")
 
 if __name__ == "__main__":
     main()
