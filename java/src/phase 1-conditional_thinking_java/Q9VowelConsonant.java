@@ -17,7 +17,9 @@ public class Q9VowelConsonant {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a single letter: ");\n        char val = scanner.next().charAt(0);\n        System.out.println("Result: " + solve(val));
+        System.out.print("Enter a single letter: ");
+                char val = scanner.next().charAt(0);
+                System.out.println("Result: " + solve(val));
         scanner.close();
     }
 }

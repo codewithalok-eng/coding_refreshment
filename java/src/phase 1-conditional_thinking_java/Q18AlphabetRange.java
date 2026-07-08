@@ -17,7 +17,8 @@ public class Q18AlphabetRange {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Char: "); char c = scanner.next().charAt(0);\n        System.out.println("Range: " + solve(c));
+        System.out.print("Char: "); char c = scanner.next().charAt(0);
+                System.out.println("Range: " + solve(c));
         scanner.close();
     }
 }

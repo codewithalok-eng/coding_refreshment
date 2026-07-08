@@ -17,7 +17,11 @@ public class Q49DateComparison {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Day 1: "); int d1 = scanner.nextInt();\n        System.out.print("Month 1: "); int m1 = scanner.nextInt();\n        System.out.print("Day 2: "); int d2 = scanner.nextInt();\n        System.out.print("Month 2: "); int m2 = scanner.nextInt();\n        System.out.println("Earlier date: " + solve(d1, m1, d2, m2));
+        System.out.print("Day 1: "); int d1 = scanner.nextInt();
+                System.out.print("Month 1: "); int m1 = scanner.nextInt();
+                System.out.print("Day 2: "); int d2 = scanner.nextInt();
+                System.out.print("Month 2: "); int m2 = scanner.nextInt();
+                System.out.println("Earlier date: " + solve(d1, m1, d2, m2));
         scanner.close();
     }
 }

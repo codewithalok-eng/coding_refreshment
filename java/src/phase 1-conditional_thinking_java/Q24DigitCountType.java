@@ -17,7 +17,8 @@ public class Q24DigitCountType {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Integer: "); int num = scanner.nextInt();\n        System.out.println("Digit type: " + solve(num));
+        System.out.print("Integer: "); int num = scanner.nextInt();
+                System.out.println("Digit type: " + solve(num));
         scanner.close();
     }
 }

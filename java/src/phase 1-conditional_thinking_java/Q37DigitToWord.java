@@ -17,7 +17,8 @@ public class Q37DigitToWord {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digit (0-9): "); int d = scanner.nextInt();\n        System.out.println("Word: " + solve(d));
+        System.out.print("Digit (0-9): "); int d = scanner.nextInt();
+                System.out.println("Word: " + solve(d));
         scanner.close();
     }
 }

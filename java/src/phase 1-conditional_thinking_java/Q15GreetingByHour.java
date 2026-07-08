@@ -17,7 +17,8 @@ public class Q15GreetingByHour {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Hour (0-23): "); int hour = scanner.nextInt();\n        System.out.println("Greeting: " + solve(hour));
+        System.out.print("Hour (0-23): "); int hour = scanner.nextInt();
+                System.out.println("Greeting: " + solve(hour));
         scanner.close();
     }
 }

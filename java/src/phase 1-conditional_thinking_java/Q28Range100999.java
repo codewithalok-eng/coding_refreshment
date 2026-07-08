@@ -17,7 +17,8 @@ public class Q28Range100999 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Number: "); int num = scanner.nextInt();\n        System.out.println("Within range [100, 999]: " + solve(num));
+        System.out.print("Number: "); int num = scanner.nextInt();
+                System.out.println("Within range [100, 999]: " + solve(num));
         scanner.close();
     }
 }

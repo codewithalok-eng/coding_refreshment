@@ -17,7 +17,8 @@ public class Q27CurrencyDivision {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Amount: "); int amt = scanner.nextInt();\n        System.out.println("Evenly divisible: " + solve(amt));
+        System.out.print("Amount: "); int amt = scanner.nextInt();
+                System.out.println("Evenly divisible: " + solve(amt));
         scanner.close();
     }
 }

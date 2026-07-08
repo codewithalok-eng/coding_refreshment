@@ -17,7 +17,9 @@ public class Q41PointOnAxes {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("x: "); double x = scanner.nextDouble();\n        System.out.print("y: "); double y = scanner.nextDouble();\n        System.out.println("Point lies on: " + solve(x, y));
+        System.out.print("x: "); double x = scanner.nextDouble();
+                System.out.print("y: "); double y = scanner.nextDouble();
+                System.out.println("Point lies on: " + solve(x, y));
         scanner.close();
     }
 }

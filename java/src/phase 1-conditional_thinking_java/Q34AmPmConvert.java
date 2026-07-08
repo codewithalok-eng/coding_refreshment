@@ -17,7 +17,9 @@ public class Q34AmPmConvert {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Hours (0-23): "); int h = scanner.nextInt();\n        System.out.print("Minutes (0-59): "); int m = scanner.nextInt();\n        System.out.println("Time: " + solve(h, m));
+        System.out.print("Hours (0-23): "); int h = scanner.nextInt();
+                System.out.print("Minutes (0-59): "); int m = scanner.nextInt();
+                System.out.println("Time: " + solve(h, m));
         scanner.close();
     }
 }

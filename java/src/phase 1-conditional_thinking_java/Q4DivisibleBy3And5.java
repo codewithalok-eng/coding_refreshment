@@ -17,7 +17,9 @@ public class Q4DivisibleBy3And5 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter an integer: ");\n        int val = scanner.nextInt();\n        System.out.println("Divisible by 3 and 5: " + solve(val));
+        System.out.print("Enter an integer: ");
+                int val = scanner.nextInt();
+                System.out.println("Divisible by 3 and 5: " + solve(val));
         scanner.close();
     }
 }

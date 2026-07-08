@@ -17,7 +17,8 @@ public class Q19DayName {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Day number (1-7): "); int d = scanner.nextInt();\n        System.out.println("Day: " + solve(d));
+        System.out.print("Day number (1-7): "); int d = scanner.nextInt();
+                System.out.println("Day: " + solve(d));
         scanner.close();
     }
 }

@@ -17,7 +17,9 @@ public class Q5LeapYear {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a year: ");\n        int val = scanner.nextInt();\n        System.out.println("Leap year: " + solve(val));
+        System.out.print("Enter a year: ");
+                int val = scanner.nextInt();
+                System.out.println("Leap year: " + solve(val));
         scanner.close();
     }
 }

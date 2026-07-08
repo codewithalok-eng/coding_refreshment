@@ -17,7 +17,8 @@ public class Q40PasswordValidator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter password: "); String pw = scanner.next();\n        System.out.println("Valid: " + solve(pw));
+        System.out.print("Enter password: "); String pw = scanner.next();
+                System.out.println("Valid: " + solve(pw));
         scanner.close();
     }
 }

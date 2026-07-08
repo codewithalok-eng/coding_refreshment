@@ -17,7 +17,8 @@ public class Q23FirstLastEqual {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("4-digit number: "); int num = scanner.nextInt();\n        System.out.println("First and last equal: " + solve(num));
+        System.out.print("4-digit number: "); int num = scanner.nextInt();
+                System.out.println("First and last equal: " + solve(num));
         scanner.close();
     }
 }

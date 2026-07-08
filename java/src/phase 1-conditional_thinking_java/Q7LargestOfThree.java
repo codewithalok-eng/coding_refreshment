@@ -17,7 +17,13 @@ public class Q7LargestOfThree {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter first number: ");\n        double a = scanner.nextDouble();\n        System.out.print("Enter second number: ");\n        double b = scanner.nextDouble();\n        System.out.print("Enter third number: ");\n        double c = scanner.nextDouble();\n        System.out.println("Largest: " + solve(a, b, c));
+        System.out.print("Enter first number: ");
+                double a = scanner.nextDouble();
+                System.out.print("Enter second number: ");
+                double b = scanner.nextDouble();
+                System.out.print("Enter third number: ");
+                double c = scanner.nextDouble();
+                System.out.println("Largest: " + solve(a, b, c));
         scanner.close();
     }
 }

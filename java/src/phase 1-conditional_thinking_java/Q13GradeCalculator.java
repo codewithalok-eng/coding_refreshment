@@ -17,7 +17,9 @@ public class Q13GradeCalculator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter marks: ");\n        double val = scanner.nextDouble();\n        System.out.println("Grade: " + solve(val));
+        System.out.print("Enter marks: ");
+                double val = scanner.nextDouble();
+                System.out.println("Grade: " + solve(val));
         scanner.close();
     }
 }

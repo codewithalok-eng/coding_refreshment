@@ -17,7 +17,9 @@ public class Q14MultipleCheck {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("First: "); int a = scanner.nextInt();\n        System.out.print("Second: "); int b = scanner.nextInt();\n        System.out.println("One is a multiple of another: " + solve(a, b));
+        System.out.print("First: "); int a = scanner.nextInt();
+                System.out.print("Second: "); int b = scanner.nextInt();
+                System.out.println("One is a multiple of another: " + solve(a, b));
         scanner.close();
     }
 }

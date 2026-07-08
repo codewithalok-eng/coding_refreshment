@@ -17,7 +17,9 @@ public class Q36SumLessThan100 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("a: "); double a = scanner.nextDouble();\n        System.out.print("b: "); double b = scanner.nextDouble();\n        System.out.println("Condition met: " + solve(a, b));
+        System.out.print("a: "); double a = scanner.nextDouble();
+                System.out.print("b: "); double b = scanner.nextDouble();
+                System.out.println("Condition met: " + solve(a, b));
         scanner.close();
     }
 }

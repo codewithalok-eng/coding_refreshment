@@ -17,7 +17,9 @@ public class Q8TemperatureRange {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter temperature: ");\n        double val = scanner.nextDouble();\n        System.out.println("Result: " + solve(val));
+        System.out.print("Enter temperature: ");
+                double val = scanner.nextDouble();
+                System.out.println("Result: " + solve(val));
         scanner.close();
     }
 }

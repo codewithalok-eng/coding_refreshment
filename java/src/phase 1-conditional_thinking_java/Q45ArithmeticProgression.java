@@ -17,7 +17,10 @@ public class Q45ArithmeticProgression {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("a: "); double a = scanner.nextDouble();\n        System.out.print("b: "); double b = scanner.nextDouble();\n        System.out.print("c: "); double c = scanner.nextDouble();\n        System.out.println("Arithmetic progression: " + solve(a, b, c));
+        System.out.print("a: "); double a = scanner.nextDouble();
+                System.out.print("b: "); double b = scanner.nextDouble();
+                System.out.print("c: "); double c = scanner.nextDouble();
+                System.out.println("Arithmetic progression: " + solve(a, b, c));
         scanner.close();
     }
 }

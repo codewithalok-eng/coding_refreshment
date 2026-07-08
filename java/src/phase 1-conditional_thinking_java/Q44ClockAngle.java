@@ -17,7 +17,9 @@ public class Q44ClockAngle {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Hours: "); int h = scanner.nextInt();\n        System.out.print("Minutes: "); int m = scanner.nextInt();\n        System.out.println("Smaller angle: " + solve(h, m));
+        System.out.print("Hours: "); int h = scanner.nextInt();
+                System.out.print("Minutes: "); int m = scanner.nextInt();
+                System.out.println("Smaller angle: " + solve(h, m));
         scanner.close();
     }
 }

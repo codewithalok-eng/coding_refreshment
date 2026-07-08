@@ -17,7 +17,8 @@ public class Q20DaysInMonth {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Month number (1-12): "); int m = scanner.nextInt();\n        System.out.println("Days: " + solve(m));
+        System.out.print("Month number (1-12): "); int m = scanner.nextInt();
+                System.out.println("Days: " + solve(m));
         scanner.close();
     }
 }

@@ -17,7 +17,8 @@ public class Q47DigitSumMiddle {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("3-digit number: "); int num = scanner.nextInt();\n        System.out.println("Condition met: " + solve(num));
+        System.out.print("3-digit number: "); int num = scanner.nextInt();
+                System.out.println("Condition met: " + solve(num));
         scanner.close();
     }
 }

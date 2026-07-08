@@ -17,7 +17,8 @@ public class Q32FizzBuzz {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Number: "); int num = scanner.nextInt();\n        System.out.println("Result: " + solve(num));
+        System.out.print("Number: "); int num = scanner.nextInt();
+                System.out.println("Result: " + solve(num));
         scanner.close();
     }
 }

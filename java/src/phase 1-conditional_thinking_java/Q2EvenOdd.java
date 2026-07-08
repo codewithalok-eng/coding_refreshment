@@ -17,7 +17,9 @@ public class Q2EvenOdd {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter an integer: ");\n        int val = scanner.nextInt();\n        System.out.println("Result: " + solve(val));
+        System.out.print("Enter an integer: ");
+                int val = scanner.nextInt();
+                System.out.println("Result: " + solve(val));
         scanner.close();
     }
 }

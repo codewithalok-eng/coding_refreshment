@@ -17,7 +17,10 @@ public class Q12TriangleType {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Side 1: "); double s1 = scanner.nextDouble();\n        System.out.print("Side 2: "); double s2 = scanner.nextDouble();\n        System.out.print("Side 3: "); double s3 = scanner.nextDouble();\n        System.out.println("Triangle type: " + solve(s1, s2, s3));
+        System.out.print("Side 1: "); double s1 = scanner.nextDouble();
+                System.out.print("Side 2: "); double s2 = scanner.nextDouble();
+                System.out.print("Side 3: "); double s3 = scanner.nextDouble();
+                System.out.println("Triangle type: " + solve(s1, s2, s3));
         scanner.close();
     }
 }

@@ -17,7 +17,8 @@ public class Q31CharClassification {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Char: "); char c = scanner.next().charAt(0);\n        System.out.println("Classification: " + solve(c));
+        System.out.print("Char: "); char c = scanner.next().charAt(0);
+                System.out.println("Classification: " + solve(c));
         scanner.close();
     }
 }

@@ -17,7 +17,8 @@ public class Q50YearToCentury {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter year: "); int year = scanner.nextInt();\n        System.out.println("Century: " + solve(year));
+        System.out.print("Enter year: "); int year = scanner.nextInt();
+                System.out.println("Century: " + solve(year));
         scanner.close();
     }
 }

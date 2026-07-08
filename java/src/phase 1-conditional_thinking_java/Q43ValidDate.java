@@ -17,7 +17,9 @@ public class Q43ValidDate {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Day: "); int d = scanner.nextInt();\n        System.out.print("Month: "); int m = scanner.nextInt();\n        System.out.println("Valid date: " + solve(d, m));
+        System.out.print("Day: "); int d = scanner.nextInt();
+                System.out.print("Month: "); int m = scanner.nextInt();
+                System.out.println("Valid date: " + solve(d, m));
         scanner.close();
     }
 }

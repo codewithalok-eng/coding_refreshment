@@ -17,7 +17,9 @@ public class Q29ThirdAngleTriangle {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Angle 1: "); double a1 = scanner.nextDouble();\n        System.out.print("Angle 2: "); double a2 = scanner.nextDouble();\n        System.out.println("Third angle: " + solve(a1, a2));
+        System.out.print("Angle 1: "); double a1 = scanner.nextDouble();
+                System.out.print("Angle 2: "); double a2 = scanner.nextDouble();
+                System.out.println("Third angle: " + solve(a1, a2));
         scanner.close();
     }
 }

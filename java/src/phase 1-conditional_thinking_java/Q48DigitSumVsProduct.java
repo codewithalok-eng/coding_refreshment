@@ -17,7 +17,8 @@ public class Q48DigitSumVsProduct {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Integer (1-9999): "); int num = scanner.nextInt();\n        System.out.println("Sum > Product: " + solve(num));
+        System.out.print("Integer (1-9999): "); int num = scanner.nextInt();
+                System.out.println("Sum > Product: " + solve(num));
         scanner.close();
     }
 }

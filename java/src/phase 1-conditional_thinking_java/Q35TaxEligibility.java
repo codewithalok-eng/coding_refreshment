@@ -17,7 +17,9 @@ public class Q35TaxEligibility {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Age: "); int age = scanner.nextInt();\n        System.out.print("Income (Lakhs): "); double inc = scanner.nextDouble();\n        System.out.println("Eligible for tax: " + solve(age, inc));
+        System.out.print("Age: "); int age = scanner.nextInt();
+                System.out.print("Income (Lakhs): "); double inc = scanner.nextDouble();
+                System.out.println("Eligible for tax: " + solve(age, inc));
         scanner.close();
     }
 }

@@ -17,7 +17,8 @@ public class Q39ElectricityBill {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter units: "); double u = scanner.nextDouble();\n        System.out.println("Bill: " + solve(u));
+        System.out.print("Enter units: "); double u = scanner.nextDouble();
+                System.out.println("Bill: " + solve(u));
         scanner.close();
     }
 }

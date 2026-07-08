@@ -11,13 +11,28 @@ import java.util.Scanner;
 public class Q1PositiveNegativeZero {
 
     public static String solve(double number) {
-        // TODO: Implement this method to solve the question
-        return "";
+
+        if (number > 0) {
+            return "positive";
+        } else if (number < 0) {
+            return "negative";
+        } else {
+            return "zero";
+        }
+
     }
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");\n        double val = scanner.nextDouble();\n        System.out.println("Result: " + solve(val));
+
+        System.out.print("Enter a number: ");
+
+        double val = scanner.nextDouble();
+
+        System.out.println("Result: " + solve(val));
+
         scanner.close();
+
     }
 }

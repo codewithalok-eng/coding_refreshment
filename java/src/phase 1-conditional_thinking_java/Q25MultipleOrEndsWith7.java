@@ -17,7 +17,8 @@ public class Q25MultipleOrEndsWith7 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Number: "); int num = scanner.nextInt();\n        System.out.println("Multiple of 7 or ends with 7: " + solve(num));
+        System.out.print("Number: "); int num = scanner.nextInt();
+                System.out.println("Multiple of 7 or ends with 7: " + solve(num));
         scanner.close();
     }
 }

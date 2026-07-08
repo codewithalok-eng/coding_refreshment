@@ -17,7 +17,8 @@ public class Q16VotingEligibility {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Age: "); int age = scanner.nextInt();\n        System.out.println("Eligible: " + solve(age));
+        System.out.print("Age: "); int age = scanner.nextInt();
+                System.out.println("Eligible: " + solve(age));
         scanner.close();
     }
 }
