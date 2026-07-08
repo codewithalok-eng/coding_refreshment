@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(number: int) -> str:
     # TODO: Implement this method to solve the question
-    return "even" # or "odd"
+    if number % 2 == 0:
+        return "even"
+    else:
+        return "odd"                    
 
 def main():
-    number = int(input("Enter an integer: "))\n    result = solve(number)\n    print(f"Result: {result}")
+    number = int(input("Enter an integer: "))
+    result = solve(number)
+    print(f"Result: {result}")
 
 if __name__ == "__main__":
     main()
