@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(number: int) -> bool:
     # TODO: Implement this method to solve the question
-    return False
+    if number % 5 == 0:
+        return True
+    else :
+        return False  
 
 def main():
-    number = int(input("Enter an integer: "))\n    result = solve(number)\n    print(f"Divisible by 5: {result}")
+    number = int(input("Enter an integer: "))
+    result = solve(number)
+    print(f"Divisible by 5: {result}")
 
 if __name__ == "__main__":
     main()
