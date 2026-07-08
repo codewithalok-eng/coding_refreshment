@@ -9,10 +9,19 @@ Mentor Tips (Python 3.14+):
 
 def solve(day: int) -> str:
     # TODO: Implement this method to solve the question
-    return "Invalid"
+    return {
+        1: "Monday",
+        2: "Tuesday",
+        3: "Wednesday",
+        4: "Thursday",
+        5: "Friday",
+        6: "Saturday",
+        7: "Sunday"
+    }.get(day, "Invalid")
 
 def main():
-    day = int(input("Day number (1-7): "))\n    print(f"Day: {solve(day)}")
+    day = int(input("Day number (1-7): "))
+    print(f"Day: {solve(day)}")
 
 if __name__ == "__main__":
     main()

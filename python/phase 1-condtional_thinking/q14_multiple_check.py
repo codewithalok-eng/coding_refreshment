@@ -9,10 +9,14 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: int, b: int) -> bool:
     # TODO: Implement this method to solve the question
+    if a%b==0 or b%a==0:
+        return True
     return False
 
 def main():
-    a = int(input("First: "))\n    b = int(input("Second: "))\n    print(f"One is a multiple of another: {solve(a, b)}")
+    a = int(input("First: "))
+    b = int(input("Second: "))
+    print(f"One is a multiple of another: {solve(a, b)}")
 
 if __name__ == "__main__":
     main()

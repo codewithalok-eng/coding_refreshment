@@ -9,10 +9,19 @@ Mentor Tips (Python 3.14+):
 
 def solve(month: int) -> int:
     # TODO: Implement this method to solve the question
+    if month in [4, 6, 9, 11]:
+        return 30
+    elif month in [1, 3, 5, 7, 8, 10, 12]:
+        return 31
+    elif month == 2:
+        return 28
+    else:
+        return -1  # Invalid month
     0
 
 def main():
-    month = int(input("Month number (1-12): "))\n    print(f"Days: {solve(month)}")
+    month = int(input("Month number (1-12): "))
+    print(f"Days: {solve(month)}")
 
 if __name__ == "__main__":
     main()

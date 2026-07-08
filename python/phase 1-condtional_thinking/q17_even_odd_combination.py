@@ -9,10 +9,17 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: int, b: int) -> str:
     # TODO: Implement this method to solve the question
-    return "both even" # or "both odd" or "one even and one odd"
+    if a % 2 == 0 and b % 2 == 0:
+        return "both even"
+    elif a % 2 == 1 and b % 2 == 1:
+        return "both odd"
+    else:
+        return "one even and one odd"
 
 def main():
-    a = int(input("First: "))\n    b = int(input("Second: "))\n    print(f"Result: {solve(a, b)}")
+    a = int(input("First: "))
+    b = int(input("Second: "))
+    print(f"Result: {solve(a, b)}")
 
 if __name__ == "__main__":
     main()

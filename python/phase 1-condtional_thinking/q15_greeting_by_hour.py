@@ -9,10 +9,11 @@ Mentor Tips (Python 3.14+):
 
 def solve(hour: int) -> str:
     # TODO: Implement this method to solve the question
-    return "Good Night"
+    return "Good Morning" if 5 <= hour <= 11 else "Good Afternoon" if 12 <= hour <= 16 else "Good Evening" if 17 <= hour <= 21 else "Good Night"
 
 def main():
-    hour = int(input("Hour (0-23): "))\n    print(f"Greeting: {solve(hour)}")
+    hour = int(input("Hour (0-23): "))
+    print(f"Greeting: {solve(hour)}")
 
 if __name__ == "__main__":
     main()

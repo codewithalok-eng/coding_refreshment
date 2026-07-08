@@ -9,10 +9,17 @@ Mentor Tips (Python 3.14+):
 
 def solve(char: str) -> str:
     # TODO: Implement this method to solve the question
-    return "a-m" # or "n-z" or "outside"
+    print(f"Char: {char}")
+    if 'a' <= char <= 'm':
+        return "a-m"
+    elif 'n' <= char <= 'z':
+        return "n-z"
+    else:                           
+        return "outside"
 
 def main():
-    char = input("Char: ")\n    print(f"Range: {solve(char)}")
+    char = input("Char: ")
+    print(f"Range: {solve(char)}")
 
 if __name__ == "__main__":
     main()

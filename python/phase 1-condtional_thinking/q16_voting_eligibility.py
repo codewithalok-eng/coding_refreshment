@@ -9,10 +9,13 @@ Mentor Tips (Python 3.14+):
 
 def solve(age: int) -> bool:
     # TODO: Implement this method to solve the question
+    if age >= 18:
+        return True
     return False
 
 def main():
-    age = int(input("Age: "))\n    print(f"Eligible: {solve(age)}")
+    age = int(input("Age: "))
+    print(f"Eligible: {solve(age)}")
 
 if __name__ == "__main__":
     main()
