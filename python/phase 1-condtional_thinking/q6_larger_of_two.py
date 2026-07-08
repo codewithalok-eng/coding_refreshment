@@ -9,10 +9,12 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: float, b: float) -> float:
     # TODO: Implement this method to solve the question
-    return 0.0
-
+    return a if a>b else b
 def main():
-    a = float(input("Enter first number: "))\n    b = float(input("Enter second number: "))\n    result = solve(a, b)\n    print(f"Larger number: {result}")
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    result = solve(a, b)
+    print(f"Larger number: {result}")
 
 if __name__ == "__main__":
     main()

@@ -9,10 +9,14 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: float, b: float, c: float) -> float:
     # TODO: Implement this method to solve the question
-    return 0.0
+    return a if a >= b and a >= c else (b if b >= c else c)
 
 def main():
-    a = float(input("Enter first number: "))\n    b = float(input("Enter second number: "))\n    c = float(input("Enter third number: "))\n    result = solve(a, b, c)\n    print(f"Largest: {result}")
+    a = float(input("Enter first number: "))
+    b = float(input("Enter second number: "))
+    c = float(input("Enter third number: "))
+    result = solve(a, b, c)
+    print(f"Largest: {result}")
 
 if __name__ == "__main__":
     main()
