@@ -9,10 +9,13 @@ Mentor Tips (Python 3.14+):
 
 def solve(password: str) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    if len(password) >= 8 and any(char.isdigit() for char in password):
+        return True
+    return False
 
 def main():
-    pw = input("Enter password: ")\n    print(f"Valid: {solve(pw)}")
+    pw = input("Enter password: ")
+    print(f"Valid: {solve(pw)}")
 
 if __name__ == "__main__":
     main()

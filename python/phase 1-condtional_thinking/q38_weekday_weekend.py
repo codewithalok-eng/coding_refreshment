@@ -9,10 +9,11 @@ Mentor Tips (Python 3.14+):
 
 def solve(day: int) -> str:
     # TODO: Implement this method to solve the question
-    return "Invalid"
+    return "Weekday" if 1 <= day <= 5 else "Weekend" if day in [6, 7] else "Invalid"
 
 def main():
-    day = int(input("Day number (1-7): "))\n    print(f"Type: {solve(day)}")
+    day = int(input("Day number (1-7): "))
+    print(f"Type: {solve(day)}")
 
 if __name__ == "__main__":
     main()

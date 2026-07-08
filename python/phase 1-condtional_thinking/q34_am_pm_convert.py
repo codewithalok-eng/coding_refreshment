@@ -9,10 +9,17 @@ Mentor Tips (Python 3.14+):
 
 def solve(hours: int, minutes: int) -> str:
     # TODO: Implement this method to solve the question
-    return "AM" # or "PM"
+    if 0 <= hours < 12:
+        return "AM"
+    elif 12 <= hours < 24:
+        return "PM"
+    else:
+        raise ValueError("Hours must be in the range 0-23.")
 
 def main():
-    h = int(input("Hours (0-23): "))\n    m = int(input("Minutes (0-59): "))\n    print(f"Time: {solve(h, m)}")
+    h = int(input("Hours (0-23): "))
+    m = int(input("Minutes (0-59): "))
+    print(f"Time: {solve(h, m)}")
 
 if __name__ == "__main__":
     main()

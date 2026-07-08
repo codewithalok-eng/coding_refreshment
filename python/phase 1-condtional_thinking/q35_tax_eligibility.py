@@ -9,10 +9,15 @@ Mentor Tips (Python 3.14+):
 
 def solve(age: int, income: float) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    if age > 18 and income > 5:
+        return True
+    return False
+    
 
 def main():
-    age = int(input("Age: "))\n    inc = float(input("Income (in Lakhs): "))\n    print(f"Eligible for tax: {solve(age, inc)}")
+    age = int(input("Age: "))
+    inc = float(input("Income (in Lakhs): "))
+    print(f"Eligible for tax: {solve(age, inc)}")
 
 if __name__ == "__main__":
     main()

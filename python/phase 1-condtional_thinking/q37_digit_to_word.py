@@ -9,10 +9,22 @@ Mentor Tips (Python 3.14+):
 
 def solve(digit: int) -> str:
     # TODO: Implement this method to solve the question
-    return "Invalid"
+    return {
+        0: "Zero",
+        1: "One",
+        2: "Two",
+        3: "Three",
+        4: "Four",
+        5: "Five",
+        6: "Six",
+        7: "Seven",
+        8: "Eight",
+        9: "Nine"
+    }.get(digit, "Invalid")
 
 def main():
-    digit = int(input("Digit (0-9): "))\n    print(f"Word: {solve(digit)}")
+    digit = int(input("Digit (0-9): "))
+    print(f"Word: {solve(digit)}")
 
 if __name__ == "__main__":
     main()

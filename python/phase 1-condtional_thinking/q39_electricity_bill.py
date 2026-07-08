@@ -9,10 +9,17 @@ Mentor Tips (Python 3.14+):
 
 def solve(units: float) -> float:
     # TODO: Implement this method to solve the question
-    0.0
+    if units <= 100:
+        return units * 1.0
+    elif units <= 300:
+        return (100 * 1.0) + ((units - 100) * 2.0)
+    else:
+        return (100 * 1.0) + (200 * 2.0) + ((units - 300) * 5.0)
+    return 0.0
 
 def main():
-    units = float(input("Enter units: "))\n    print(f"Bill: {solve(units)}")
+    units = float(input("Enter units: "))
+    print(f"Bill: {solve(units)}")
 
 if __name__ == "__main__":
     main()

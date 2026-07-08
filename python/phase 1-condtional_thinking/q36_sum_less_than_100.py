@@ -9,10 +9,14 @@ Mentor Tips (Python 3.14+):
 
 def solve(a: float, b: float) -> bool:
     # TODO: Implement this method to solve the question
-    False
+    if a > 0 and b > 0 and (a + b) < 100:
+        return True
+    return False
 
 def main():
-    a = float(input("a: "))\n    b = float(input("b: "))\n    print(f"Condition met: {solve(a, b)}")
+    a = float(input("a: "))
+    b = float(input("b: "))
+    print(f"Condition met: {solve(a, b)}")
 
 if __name__ == "__main__":
     main()
