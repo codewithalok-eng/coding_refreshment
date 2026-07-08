@@ -9,10 +9,12 @@ Mentor Tips (Python 3.14+):
 
 def solve(temp: float) -> str:
     # TODO: Implement this method to solve the question
-    return "Cold" # or "Warm" or "Hot"
+    return "Cold" if temp < 15 else "Warm" if 15 <= temp <= 30 else "Hot"
 
 def main():
-    temp = float(input("Enter temperature: "))\n    result = solve(temp)\n    print(f"Result: {result}")
+    temp = float(input("Enter temperature: "))
+    result = solve(temp)
+    print(f"Result: {result}")
 
 if __name__ == "__main__":
     main()
