@@ -9,9 +9,10 @@ Mentor Tips (Python 3.14+):
 
 def solve(s1: float, s2: float, s3: float) -> bool:
     # TODO: Implement this method to solve the question
-    if s1+s2>s3 and s2+s2>s1 and s1+s3>s2:
+    if s1 + s2 > s3 and s1 + s3 > s2 and s2 + s3 > s1:
         return True
-    return False
+    else:
+        return False
 
 def main():
     s1 = float(input("Side 1: "))
